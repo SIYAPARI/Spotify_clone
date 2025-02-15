@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", serif;
+    font-family: 'Circular Std', 'Gotham', 'Poppins', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -44,7 +44,8 @@ body {
     display:flex;
     align-items: center;
     gap:14px;
-
+    margin-top: 6px;
+    margin-right: 17px;
 }
 .close img{
     display:none;
@@ -66,6 +67,7 @@ body {
 
 #spotify-logo{
     font-size: 35px;
+    
 
 }
 
@@ -79,25 +81,35 @@ body {
 .heading {
     display: flex;
     font-weight: bold;
-    gap: 12px;
+    padding-left:0;
     padding-top: 14px;
     padding: 16px 15px;
     align-items: center;
     font-size: 13px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-.heading h2{
-    width: 250px;
+.heading .lib_heading{
+    font-size: 20px;
+    font-weight:450;
+    white-space: nowrap;
 }
 
 .heading img {
-    width: 20px;
-
+    width: 22px;
 }
 
-.heading i {
-    margin-left: 7rem;
-    font-size: 1rem;
+.rhs_head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rhs_head img{
+    margin-right: 6px;
+}
+.head_icons i {
+    margin-right: 3px;
+    font-size: 1.2rem;
 }
 
 .footer {
@@ -118,7 +130,9 @@ body {
     font-weight: 300;
     font-size: 15px;
 }
-
+.footer a:hover{
+    color:whitesmoke;
+}
 .library {
     min-height: 80vh;
     position: relative;
@@ -225,7 +239,7 @@ body {
 .signupBtn:hover{
     color:white;
     cursor:pointer;
-    font-size:16px;   
+    padding:10px;   
 }
 .buttons >*{
     margin:0 12px;
@@ -238,11 +252,12 @@ body {
     width: 102px;
     padding:10px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 300;
 }
 .loginBtn:hover{
-    font-size:22px;
+    
     font-weight: bold;
+    padding:10px;
 }
 
 .playbar{
@@ -259,6 +274,9 @@ body {
 }
 .playbar .abovebar .song-info{
     width:250px;
+}
+.songs-list{
+    padding-bottom: 40px;
 }
 .songs-list ul li {
     list-style-type:decimal;
