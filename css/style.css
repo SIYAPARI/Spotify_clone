@@ -168,6 +168,22 @@ body {
     overflow-y:auto ;
     
 }
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Track color */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Scrollbar thumb color */
+    border-radius: 5px;
+}
 
 .spotify-playlist {
     padding: 15px;
@@ -262,15 +278,17 @@ body {
 
 .playbar{
     position:fixed;
+    right:35px;
     bottom: 20px;
     background-color: rgba(0, 0, 0, 0.717);
-    width:70vw;
+    width:68vw;
     padding:10px;
     height:66px; 
     display: flex;
     justify-content: center;
     gap:10px !important;
     border-radius: 10px;
+    z-index:1000;
 }
 .playbar .abovebar .song-info{
     width:250px;
@@ -305,7 +323,7 @@ body {
 
 }
 .songs-list ul li .info{
-    font-size:18px;
+    font-size:16px;
 }
 .info div{
     text-align: left;
@@ -505,5 +523,8 @@ body {
     .card-container{
         padding:0px;
         max-height:65vh;
+    }
+    .loginBtn{
+        margin-right:10px;
     }
 }
