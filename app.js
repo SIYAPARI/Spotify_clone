@@ -80,7 +80,7 @@ const playMusic=function playMusic(track,pause=false){
     }
     
     document.querySelector(".song-info").innerHTML=decodeURI(track);
-    document.querySelector(".song-time").innerHTML="00:00 /00:00";
+    document.querySelector(".song-time").innerHTML="00:00 / 00:00";
     
 
     
@@ -115,8 +115,8 @@ async function displayAlbums(){
                             <i class="fa-solid fa-play"></i>
                         </div>
                         <img src="/songs/${folder}/cover.jpg" alt="jo tum mere ho ">
-                        <h2>${response.title} </h2>
-                        <p>${response.description} </p>
+                        <h2 ">${response.title} </h2>
+                        <p >${response.description} </p>
                     </div>`
         }
     };
@@ -136,10 +136,6 @@ async function displayAlbums(){
     
 };
     
-
-
-   
-
 
 async function main() {
     
@@ -169,6 +165,7 @@ async function main() {
         currentSong.currentTime,currentSong.duration;
         document.querySelector(".song-time").innerHTML=`${secondsToMinutesSeconds(currentSong.currentTime)}/${secondsToMinutesSeconds(currentSong.duration)}`;
         document.querySelector(".circle").style.left= (currentSong.currentTime/currentSong.duration)*100 +"%"  
+        document.querySelector(".progress").style.width = percent + "%";
      });
 
     //ADD EVENT LISTENER TO SEEK BAR
